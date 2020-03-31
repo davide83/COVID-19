@@ -6,7 +6,7 @@
 
 ############## 
 # Setup your workspace
-#DB_PATH=databases/dpc-covid19-ita_db.sqlite3
+#DB_PATH=database/dpc-covid19-ita_db.sqlite3
 
 
 #####################

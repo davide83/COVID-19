@@ -43,7 +43,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add ./databases/sqlite
+        git add ./databases/sqlite/dpc-covid19-ita_db.sqlite3
         git commit -m "[GH Actions] Updating the repository's DB file in the databases/sqlite folder"
     - name: Push changes  # push the output folder to your repo
       uses: ad-m/github-push-action@master

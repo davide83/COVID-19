@@ -21,7 +21,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
-      DB_PATH: databases/sqlite/dpc-covid19-ita_db.sqlite3
+      DB_PATH: databases/dpc-covid19-ita_db.sqlite3
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -43,7 +43,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add ./databases/sqlite/dpc-covid19-ita_db.sqlite3
+        git add ./databases
         git commit -m "[GH Actions] Updating the repository's DB file in the databases/sqlite folder"
     - name: Push changes  # push the output folder to your repo
       uses: ad-m/github-push-action@master
